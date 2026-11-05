@@ -1,5 +1,5 @@
 add_executable(idb idb.cpp)
-target_link_libraries(idb PRIVATE idb::libidb)
+target_link_libraries(idb PRIVATE idb::libidb PkgConfig::libedit)
 include(GNUInstallDirs)
 install(
     TARGETS idb
